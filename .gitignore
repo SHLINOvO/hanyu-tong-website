@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.vercel
+.git_broken
+
+# 大型二进制文件（Vercel 单文件限制 50MB）
+public/download/*.apk
+public/download/*.exe
+
+# 说明书 PDF（各约 1.1MB，远低于限制）必须入库：
+# 若被忽略，Vercel 从 Git 构建时 public/download 下没有它们，页脚说明书链接会 404
+!public/download/*.pdf
